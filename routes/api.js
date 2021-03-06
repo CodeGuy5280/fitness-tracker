@@ -26,10 +26,8 @@ router.put("/api/workouts/:exerciseid", (req, res) => {
     })
     .catch((err) => {
       res.json(err);
-    }); // the id work
-  // search the database based off of the workoutid
-  // Workout the method findByIdAndUpdate with body
-  // return the result of that
+    });
+  
 });
 
 router.get("/api/workouts", (req, res) => {
