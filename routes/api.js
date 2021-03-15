@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const Workout = require("../models/workout.js");
+const Workout = require("../models/workout");
 const path = require("path");
 
 router.post("/api/workouts", ({ body }, res) => {
@@ -12,7 +12,7 @@ router.post("/api/workouts", ({ body }, res) => {
     });
 });
 router.get("/exercise", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/exercise.html"));
+  res.sendFile(path.join(__dirname, "../Develop/public/exercise.html"));
 });
 
 router.put("/api/workouts/:exerciseid", (req, res) => {
